@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: simple-project-configmap
+  namespace: default
+data:
+  application.yml: |
+    spring:
+      application:
+        name: "simple-project"
+      output:
+        ansi:
+          enabled: always
+    
+    otel:
+      traces:
+        exporter: none
+      metrics:
+        exporter: none
+      logs:
+        exporter: none
+      instrumentation:
+        micrometer:
+          enabled: true
+        common:
+          logging:
+            trace-id: traceId
+            span-id: spanId
+    
+    server:
+      port: 8080

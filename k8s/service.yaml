@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple-project
+spec:
+  type: ClusterIP
+  selector:
+    app: simple-project
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8080
+    - name: debug
+      port: 5005
+      targetPort: 5005

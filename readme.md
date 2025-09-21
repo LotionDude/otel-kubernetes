@@ -6,6 +6,7 @@ environment when specifically using the following dependencies with specific con
 - `spring-cloud-starter-bootstrap`
 - `spring-cloud-starter-kubernetes-client-config`
 - `opentelemetry-spring-boot-starter`
+- `micrometer-tracing`
 
 . When run locally, logs will print the traceId and spanId as such:
 

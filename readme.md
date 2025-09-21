@@ -8,7 +8,7 @@ environment when specifically using the following dependencies with specific con
 - `opentelemetry-spring-boot-starter`
 - `micrometer-tracing`
 
-. When run locally, logs will print the traceId and spanId as such:
+When ran locally, logs will print the traceId and spanId as such:
 
 ```text
 2025-09-21T23:22:56.168+03:00  INFO 7500 --- [simple-project] [nio-8081-exec-2] [7b714e143be3b3ea018dd92e27c31e03-1f54a24af69f2707] o.e.otel.example.ApplicationController   : This log should include traceId + spanId
